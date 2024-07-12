@@ -1,0 +1,45 @@
+/* src/components/Navbar.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  /* background-color: #282c34; */
+  color: white;
+}
+
+.light {
+  /* background-color: #ffffff; */
+  color: #000000;
+}
+
+.dark {
+  /* background-color: #282c34; */
+  color: white;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hireMe {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.toggleDarkmode {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
