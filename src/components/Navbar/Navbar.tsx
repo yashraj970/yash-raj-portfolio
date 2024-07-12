@@ -14,7 +14,16 @@ const Navbar: React.FC = () => {
     <nav
       className={`${styles.navbar} ${darkMode ? styles.dark : styles.light}`}
     >
-      <div className={styles.logo}>Stoman</div>
+      {/* <div className={styles.logo}>Stoman</div> */}
+      <div className={styles.logo}>
+        {"Yash Raj".split("").map((letter, index) => {
+          return (
+            <span key={index} className={styles.letter}>
+              {letter}
+            </span>
+          );
+        })}
+      </div>
       <ul className={styles.navLinks}>
         <li>
           <a href="#projects">Projects</a>
@@ -26,7 +35,7 @@ const Navbar: React.FC = () => {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-      <button className={styles.hireMe}>Hire Me</button>
+      {/* <button className={styles.hireMe}>Hire Me</button> */}
       <div
         className={styles.toggleDarkmode}
         onClick={() => dispatch(toggleDarkMode())}
