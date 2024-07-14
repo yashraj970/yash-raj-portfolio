@@ -1,20 +1,16 @@
-/* src/components/Navbar.module.css */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 5rem;
-  background-color: #282c34;
   color: white;
 }
 
 .light {
-  /* background-color: #ffffff; */
   color: #000000;
 }
 
 .dark {
-  /* background-color: #282c34; */
   color: white;
 }
 
@@ -58,7 +54,7 @@
 }
 
 .letter:hover {
-  color: #1969fd;
+  color: rgb(46, 112, 255);
   margin-top: -0.4rem;
   transition-duration: 0.1s;
 }
