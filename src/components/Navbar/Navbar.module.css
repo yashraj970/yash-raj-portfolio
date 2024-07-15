@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 7rem;
   color: white;
 }
 
@@ -49,7 +49,7 @@
   display: inline-block;
   transition: all 0.5s;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 500;
 }
 

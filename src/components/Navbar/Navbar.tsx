@@ -5,6 +5,7 @@ import { toggleDarkMode } from "../../store/layoutSlice";
 import { RootState } from "../../store/store";
 import styles from "./Navbar.module.css";
 import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   const dispatch = useDispatch();
@@ -26,13 +27,13 @@ const Navbar: React.FC = () => {
       </div>
       <ul className={styles.navLinks}>
         <li>
-          <a href="#projects">Projects</a>
+          <Link href="/projects">Projects</Link>
         </li>
         <li>
-          <a href="#about">About Me</a>
+          <Link href="/about">About Me</Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
       {/* <button className={styles.hireMe}>Hire Me</button> */}

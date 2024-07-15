@@ -5,7 +5,7 @@ interface LayoutState {
 }
 
 const initialState: LayoutState = {
-  darkMode: false,
+  darkMode: true,
 };
 
 const layoutSlice = createSlice({
