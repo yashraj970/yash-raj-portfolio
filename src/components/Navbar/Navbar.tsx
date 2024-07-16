@@ -20,6 +20,7 @@ export const routes = [
 
 const Navbar = () => {
   const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <nav className="flex flex-col items-center py-7">
@@ -39,7 +40,7 @@ const Navbar = () => {
               <li
                 key={index}
                 className={`list-none  ${
-                  usePathname() === item.path
+                  pathname === item.path
                     ? "opacity-100"
                     : "opacity-40 hover:opacity-100 transition-opacity"
                 }`}

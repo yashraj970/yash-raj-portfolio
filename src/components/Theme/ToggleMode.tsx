@@ -11,7 +11,7 @@ const ToggleMode = () => {
 
   useEffect(() => {
     setMounted(true);
-  });
+  }, []);
 
   if (!mounted) {
     return <Button color="secondary" size="small" disabled={true}></Button>;
