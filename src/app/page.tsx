@@ -15,7 +15,7 @@ export default function Home() {
           height={37}
           priority
         />
-        <p className="text-xl mb-5">Hey, I'm Yash.</p>
+        <p className="text-xl mb-5">Hey, I&apos;m Yash.</p>
       </div>
     </main>
   );
