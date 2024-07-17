@@ -68,9 +68,12 @@
 }
 
 .logo-letter:hover {
-  color: rgb(67, 156, 252);
+  color: rgb(0 199 255);
   margin-top: -0.4rem;
   transition-duration: 0.1s;
+}
+.text-fun {
+  color: rgb(0 199 255);
 }
 
 @keyframes scaleDownIn {
