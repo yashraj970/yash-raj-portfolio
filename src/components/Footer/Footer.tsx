@@ -53,19 +53,19 @@ export const footer: Footer = {
       links: [
         {
           name: "GitHub",
-          link: "https://github.com/braydentw",
+          link: "https://github.com/yashraj970",
           icon: "/static/icons/github-f.svg",
           leavesWebsite: true,
         },
         {
           name: "LinkedIn",
-          link: "https://www.linkedin.com/in/braydentw/",
+          link: "https://www.linkedin.com/in/yash-raj-a9037b242/",
           icon: "/static/icons/linkedin-f.svg",
           leavesWebsite: true,
         },
         {
           name: "Email",
-          link: "mailto:contact@braydentw.io",
+          link: "mailto:yashraj970@gmail.com",
           icon: "/static/icons/mail-f.svg",
           leavesWebsite: true,
         },
@@ -181,11 +181,7 @@ function Footer() {
                 <span className="sr-only">NextJS</span>
               </span>
               <span>
-                <img
-                  src="/tailwind.svg"
-                  width="26"
-                  title="TailwindCSS"
-                />
+                <img src="/tailwind.svg" width="26" title="TailwindCSS" />
                 <span className="sr-only">TailwindCSS</span>
               </span>
             </span>
@@ -205,7 +201,7 @@ function Footer() {
       <div className="mt-8 text-center sm:text-right sm:-mt-12">
         <a
           className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border border-fun-pink px-4 py-2 rounded-xl text-fun-pink cursor-pointer opacity-50"
-          href="https://github.com/braydentw/braydentw.io"
+          href="https://github.com/yashraj970"
           target="_blank"
           rel="nooreferrer"
         >
