@@ -23,7 +23,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="flex flex-col items-center py-7">
+    <nav className="flex flex-col items-center py-7 px-8 sm:px-0">
       <div className="flex justify-between max-w-6xl w-full">
         <div className="flex gap-[1px]">
           {"Yash Raj".split("").map((letter, index) => {
@@ -34,7 +34,7 @@ const Navbar = () => {
             );
           })}
         </div>
-        <ul className="flex items-center space-x-10">
+        <ul className="hidden sm:flex items-center space-x-10">
           {routes.map((item, index) => {
             return (
               <li
