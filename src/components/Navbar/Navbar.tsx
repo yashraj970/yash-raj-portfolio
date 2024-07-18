@@ -13,8 +13,8 @@ export const routes = [
     path: "/projects",
   },
   {
-    title: "Designs",
-    path: "/designs",
+    title: "About",
+    path: "/about",
   },
 ];
 

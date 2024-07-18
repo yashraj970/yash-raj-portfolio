@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex items-center">
       <div
-        className="relative heroElem w-full h-[50rem] sm:h-full pt-2 sm:pt-24 pb-40 m-auto flex flex-col-reverse sm:flex-row justify-between text-center items-center z-1"
+        className="relative heroElem w-full h-[50rem] sm:h-full pt-2 sm:pt-10 pb-40 m-auto flex flex-col-reverse sm:flex-row justify-between text-center items-center z-1"
         style={{ maxWidth: "1200px" }}
       >
         <div className="w-11/12 sm:w-[60%]">
