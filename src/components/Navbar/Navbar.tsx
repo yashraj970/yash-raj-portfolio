@@ -3,20 +3,7 @@ import Link from "next/link";
 import React from "react";
 import ToggleMode from "../Theme/ToggleMode";
 import { usePathname, useRouter } from "next/navigation";
-export const routes = [
-  {
-    title: "Home",
-    path: "/",
-  },
-  {
-    title: "Projects",
-    path: "/projects",
-  },
-  {
-    title: "About",
-    path: "/about",
-  },
-];
+import { routes } from "@/data/globalData";
 
 const Navbar = () => {
   const router = useRouter();
