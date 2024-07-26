@@ -29,6 +29,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --funBlue: rgb(3, 52, 110);
   }
 
   .dark {
@@ -56,6 +57,7 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --funBlue: rgb(0, 199, 255);
   }
 }
 
@@ -73,7 +75,7 @@
   transition-duration: 0.1s;
 }
 .text-fun {
-  color: rgb(0 199 255);
+  color: var(--funBlue);
 }
 
 @keyframes scaleDownIn {
@@ -91,7 +93,7 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(5px);
+    transform: translateY(7px);
   }
   100% {
     transform: translateY(0px);
