@@ -7,15 +7,14 @@ export default function Home() {
     <>
       <main className="flex items-center">
         <div
-          className="relative heroElem w-full h-[50rem] sm:h-full pt-2 sm:pt-2 m-auto flex flex-col-reverse sm:flex-row justify-between text-center items-center z-1"
+          className="relative heroElem w-full h-[39rem] sm:h-full pt-2 sm:pt-2 m-auto flex flex-col-reverse sm:flex-row justify-between text-center items-center z-1"
           style={{ maxWidth: "1200px" }}
         >
           <div className="w-11/12 sm:w-[60%]">
             <p className="text-xl mb-5 sm:block">Hey, I&apos;m Yash.</p>
             <h1 className="heroTitle inline-block max-w-2xl lg:max-w-3xl  w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold heroShinyBg">
               I enjoy <span className="text-fun">building</span> and{" "}
-              <span className="text-fun">designing</span> for the
-              web.
+              <span className="text-fun">designing</span> for the web.
               <img
                 className="sqD squiggle-hero-html w-16 top-[-90px] right-[5%] sm:top-[-90px] sm:right-[170px]"
                 style={{ animationDelay: "0.1s" }}
@@ -42,7 +41,9 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <MacbookScrollDemo />
+      <div>
+        <MacbookScrollDemo />
+      </div>
     </>
   );
 }
