@@ -170,7 +170,7 @@ function Footer() {
                 <img
                   src="/next.svg"
                   width="40"
-                  className="invert"
+                  className="dark:invert"
                   title="NextJS"
                 />
                 <span className="sr-only">NextJS</span>

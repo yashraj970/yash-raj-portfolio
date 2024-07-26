@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <main className="flex items-center">
+      <main>
         <div
           className="relative heroElem w-full h-[39rem] sm:h-full pt-2 sm:pt-2 m-auto flex flex-col-reverse sm:flex-row justify-between text-center items-center z-1"
           style={{ maxWidth: "1200px" }}
