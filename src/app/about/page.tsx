@@ -1,7 +1,12 @@
+import { AppleCardsCarouselDemo } from "@/components/CardsCarousel/CardsCarousel";
 import React from "react";
 
 const page = () => {
-  return <div>About</div>;
+  return (
+    <div>
+      <AppleCardsCarouselDemo />
+    </div>
+  );
 };
 
 export default page;
