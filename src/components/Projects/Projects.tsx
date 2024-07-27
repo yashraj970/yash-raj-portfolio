@@ -15,6 +15,7 @@ const Projects = () => {
             "Comprehensive ecommerce platform featuring all the essential ecommerce features."
           }
           liveLink={"https://ecommerce-web-three-nu.vercel.app/"}
+          github={"https://github.com/yashraj970/YesMart-Ecommerce"}
         />
         {/* <ThreeDCardDemo
           title={"Make things float in air"}

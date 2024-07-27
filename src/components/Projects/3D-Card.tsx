@@ -9,12 +9,14 @@ export function ThreeDCardDemo({
   title,
   description,
   src,
-  liveLink
+  liveLink,
+  github,
 }: {
   title: string;
   description: string;
   src: string;
   liveLink: string;
+  github: string;
 }) {
   return (
     <CardContainer className="inter-var">
@@ -53,10 +55,18 @@ export function ThreeDCardDemo({
           </CardItem>
           <CardItem
             translateZ={20}
-            as="button"
+            as={Link}
+            href={github}
+            target="__blank"
             className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
           >
-            Sign up
+            <Image
+              src="/static/icons/github.svg"
+              width={16}
+              height={16}
+              alt="Github Icon"
+            />
+            {/* Github */}
           </CardItem>
         </div>
       </CardBody>
