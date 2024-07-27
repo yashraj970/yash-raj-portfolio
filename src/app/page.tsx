@@ -1,5 +1,6 @@
 import HeroBanner from "@/components/HeroBanner/HeroBanner";
 import { MacbookScrollDemo } from "@/components/MacbookScroll/MacbookScrollDemo";
+import Projects from "@/components/Projects/Projects";
 import Image from "next/image";
 
 export default function Home() {
@@ -43,6 +44,9 @@ export default function Home() {
       </main>
       <div>
         <MacbookScrollDemo />
+      </div>
+      <div>
+        <Projects />
       </div>
     </>
   );
