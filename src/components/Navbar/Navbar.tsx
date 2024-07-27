@@ -26,10 +26,10 @@ const Navbar = () => {
             return (
               <li
                 key={index}
-                className={`list-none  ${
+                className={`list-none text-lg  ${
                   pathname === item.path
                     ? "opacity-100"
-                    : "opacity-40 hover:opacity-100 transition-opacity"
+                    : "opacity-55 hover:opacity-100 transition-opacity"
                 }`}
               >
                 <Link href={item.path}>{item.title}</Link>
