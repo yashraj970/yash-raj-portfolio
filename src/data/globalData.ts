@@ -84,3 +84,22 @@ export const footer: Footer = {
     message: "I appreciate your support very much! 💙",
   },
 };
+
+// Projects
+interface Project {
+  title: string;
+  src: string;
+  description: string;
+  liveLink: string;
+  github: string;
+}
+export const projects: Project[] = [
+  {
+    title: "YesMart Ecommerce WebApp",
+    src: "/images/projects/YesMart_Ecommerce.png",
+    description:
+      "Comprehensive ecommerce platform featuring all the essential ecommerce features.",
+    liveLink: "https://ecommerce-web-three-nu.vercel.app/",
+    github: "https://github.com/yashraj970/YesMart-Ecommerce",
+  },
+];
