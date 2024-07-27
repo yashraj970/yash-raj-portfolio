@@ -9,10 +9,12 @@ export function ThreeDCardDemo({
   title,
   description,
   src,
+  liveLink
 }: {
   title: string;
   description: string;
   src: string;
+  liveLink: string;
 }) {
   return (
     <CardContainer className="inter-var">
@@ -39,11 +41,11 @@ export function ThreeDCardDemo({
             alt="thumbnail"
           />
         </CardItem>
-        <div className="flex justify-between items-center mt-20">
+        <div className="flex justify-between items-center mt-8">
           <CardItem
             translateZ={20}
             as={Link}
-            href="https://twitter.com/mannupaaji"
+            href={liveLink}
             target="__blank"
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
           >
