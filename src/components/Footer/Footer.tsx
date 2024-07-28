@@ -2,12 +2,39 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { footer } from "@/data/globalData";
+import LanguageIcon from "@mui/icons-material/Language";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
+
+const socialLinks = [
+  {
+    id: 1,
+    icon: <LanguageIcon />,
+    url: "https://yash-raj-portfolio.vercel.app/",
+  },
+  {
+    id: 2,
+    icon: <GitHubIcon />,
+    url: "https://github.com/yashraj970",
+  },
+  {
+    id: 4,
+    icon: <LinkedInIcon />,
+    url: "https://www.linkedin.com/in/yash-raj-a9037b242/",
+  },
+  {
+    id: 5,
+    icon: <EmailIcon />,
+    url: "mailto:itsyashraj970@gmail.com",
+  },
+];
 
 function Footer() {
   return (
     <footer className="flex flex-col w-full px-5 py-10 border-t border-fun-pink-darker z-5 bg-bg">
       <div className="w-full max-w-4xl m-auto grid grid-cols-2 sm:grid-cols-3 justify-between items-start">
-        {footer.columns.map((item, index) => {
+        {/* {footer.columns.map((item, index) => {
           return (
             <div key={index} className="text-left mb-5 sm:mb-0">
               <h4 className="uppercase text-fun-gray text-sm font-bold">
@@ -44,7 +71,7 @@ function Footer() {
               </div>
             </div>
           );
-        })}
+        })} */}
         {/* <div className="text-center col-span-2 sm:col-auto sm:text-left pt-8 sm:mt-0 sm:pt-0 text-fun-gray border-t border-fun-pink-dark sm:border-0">
           <h4 className="uppercase text-fun-gray text-sm font-bold">
             Support My Work
@@ -81,6 +108,21 @@ function Footer() {
             </p>
           </div>
         </div> */}
+      </div>
+      <div className="flex flex-col items-center">
+        <p className="text-3xl mb-5">Follow me</p>
+        <ul className="flex gap-4 sm:gap-8">
+          {socialLinks.map((link) => (
+            <a
+              href={link.url}
+              target="__blank"
+              key={link.id}
+              className="bg-gray-200 dark:bg-gray-700 cursor-pointer rounded-lg shadow-sm p-3 sm:p-3.5 duration-300"
+            >
+              <i className="text-primary">{link.icon}</i>
+            </a>
+          ))}
+        </ul>
       </div>
       <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-fun-gray border-t border-fun-pink-dark">
         <p className="flex flex-col items-center justify-center ">
