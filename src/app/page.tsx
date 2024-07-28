@@ -46,6 +46,9 @@ export default function Home() {
         <MacbookScrollDemo />
       </div>
       <div>
+        <h1 className="max-w-7xl mx-auto text-xl md:text-4xl font-bold text-neutral-800 dark:text-neutral-200 font-sans pt-20">
+          Few of my favorite projects
+        </h1>
         <Projects />
       </div>
     </>
