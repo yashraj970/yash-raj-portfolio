@@ -1,9 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import { Moon, Sun } from "lucide-react";
 import Button from "@mui/material/Button";
 import { IconButton } from "@mui/material";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import LightModeIcon from "@mui/icons-material/LightMode";
 
 const ToggleMode = () => {
   const { theme, setTheme } = useTheme();
@@ -26,9 +27,9 @@ const ToggleMode = () => {
       className="cursor-pointer"
     >
       {dark ? (
-        <Sun className="hover:text-primary text-primary" />
+        <LightModeIcon className="hover:text-primary text-primary" />
       ) : (
-        <Moon className="hover:text-primary text-primary" />
+        <DarkModeOutlinedIcon className="hover:text-primary text-primary" />
       )}
     </IconButton>
   );
