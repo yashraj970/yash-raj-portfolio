@@ -11,7 +11,7 @@ export function AppleCardsCarouselDemo() {
   return (
     <div className="w-full h-full py-20">
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-        Get to know your iSad.
+        Get to Know about My Skills.
       </h2>
       <Carousel items={cards} />
     </div>
@@ -37,7 +37,7 @@ const DummyContent = () => {
               thought.
             </p>
             <Image
-              src="https://assets.aceternity.com/macbook.png"
+              src=""
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
@@ -52,33 +52,34 @@ const DummyContent = () => {
 
 const data = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
+    category: "Frontend Development",
+    title: "Crafting responsive and dynamic web interfaces.",
     src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: <DummyContent />,
   },
   {
-    category: "Productivity",
-    title: "Enhance your productivity.",
+    category: "Backend Development",
+    title:
+      "Enhance your productivity.Building robust and scalable server-side applications.",
     src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: <DummyContent />,
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
+    category: "UI/UX Design (Figma)",
+    title: "Designing intuitive and user-friendly interfaces.",
     src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: <DummyContent />,
   },
 
   {
-    category: "Product",
-    title: "Maps for your iPhone 15 Pro Max.",
+    category: "App Development (React Native)",
+    title: "Creating cross-platform mobile applications.",
     src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: <DummyContent />,
   },
   {
-    category: "iOS",
-    title: "Photography just got better.",
+    category: "WebSocket Integration",
+    title: "Enabling real-time, bidirectional communication for web apps.",
     src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: <DummyContent />,
   },

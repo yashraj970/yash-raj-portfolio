@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import Button from "@mui/material/Button";
 import { IconButton } from "@mui/material";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-import LightModeIcon from "@mui/icons-material/LightMode";
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 
 const ToggleMode = () => {
   const { theme, setTheme } = useTheme();
@@ -27,7 +27,7 @@ const ToggleMode = () => {
       className="cursor-pointer"
     >
       {dark ? (
-        <LightModeIcon className="hover:text-primary text-primary" />
+        <LightModeOutlinedIcon className="hover:text-primary text-primary" />
       ) : (
         <DarkModeOutlinedIcon className="hover:text-primary text-primary" />
       )}
