@@ -46,7 +46,7 @@ export default function Home() {
         <MacbookScrollDemo />
       </div>
       <div className="text-center sm:text-start">
-        <h1 className="max-w-7xl mx-auto text-xl md:text-4xl font-bold text-neutral-800 dark:text-neutral-200 font-sans pt-20">
+        <h1 className="w-11/12 mx-auto text-xl md:text-4xl font-bold text-neutral-800 dark:text-neutral-200 font-sans mt-12">
           Few of my favorite projects
         </h1>
         <Projects />
