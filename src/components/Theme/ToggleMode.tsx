@@ -15,7 +15,7 @@ const ToggleMode = () => {
   }, []);
 
   if (!mounted) {
-    return <Button color="secondary" size="small" disabled={true}></Button>;
+    return <Button disabled></Button>;
   }
 
   const dark = theme === "dark";
@@ -24,13 +24,9 @@ const ToggleMode = () => {
     <IconButton
       size="small"
       onClick={() => setTheme(`${dark ? "light" : "dark"}`)}
-      className="cursor-pointer"
+      className="text-primary"
     >
-      {dark ? (
-        <LightModeOutlinedIcon className="hover:text-primary text-primary" />
-      ) : (
-        <DarkModeOutlinedIcon className="hover:text-primary text-primary" />
-      )}
+      {dark ? <LightModeOutlinedIcon /> : <DarkModeOutlinedIcon />}
     </IconButton>
   );
 };

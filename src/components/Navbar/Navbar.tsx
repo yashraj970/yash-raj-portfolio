@@ -1,16 +1,27 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import ToggleMode from "../Theme/ToggleMode";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { routes } from "@/data/globalData";
+import {
+  IconButton,
+  Box,
+  Drawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
-  const router = useRouter();
   const pathname = usePathname();
 
+  
+
   return (
-    <nav className="flex flex-col items-center py-7 px-8 sm:px-0">
+    <nav className="flex flex-col items-center py-7 px-8 sm:px-4 md:px-0">
       <div className="flex justify-between max-w-6xl w-full">
         <Link href={"/"}>
           <div className="flex gap-[1px]">
@@ -41,7 +52,13 @@ const Navbar = () => {
         </ul>
         <div className="flex items-center gap-5">
           <ToggleMode />
+          <IconButton
+            className="sm:hidden text-primary"
+          >
+            <MenuIcon />
+          </IconButton>
         </div>
+        
       </div>
     </nav>
   );
