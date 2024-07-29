@@ -33,8 +33,8 @@ const socialLinks = [
 function Footer() {
   return (
     <footer className="flex flex-col w-full px-5 py-10 border-t border-fun-pink-darker z-5 bg-bg">
-      <div className="w-full max-w-4xl m-auto grid grid-cols-2 sm:grid-cols-3 justify-between items-start">
-        {/* {footer.columns.map((item, index) => {
+      {/* <div className="w-full max-w-4xl m-auto grid grid-cols-2 sm:grid-cols-3 justify-between items-start">
+        {footer.columns.map((item, index) => {
           return (
             <div key={index} className="text-left mb-5 sm:mb-0">
               <h4 className="uppercase text-fun-gray text-sm font-bold">
@@ -71,8 +71,8 @@ function Footer() {
               </div>
             </div>
           );
-        })} */}
-        {/* <div className="text-center col-span-2 sm:col-auto sm:text-left pt-8 sm:mt-0 sm:pt-0 text-fun-gray border-t border-fun-pink-dark sm:border-0">
+        })}
+        <div className="text-center col-span-2 sm:col-auto sm:text-left pt-8 sm:mt-0 sm:pt-0 text-fun-gray border-t border-fun-pink-dark sm:border-0">
           <h4 className="uppercase text-fun-gray text-sm font-bold">
             Support My Work
           </h4>
@@ -107,8 +107,8 @@ function Footer() {
               {footer.support.message}
             </p>
           </div>
-        </div> */}
-      </div>
+        </div>
+      </div> */}
       <div className="flex flex-col items-center">
         <p className="text-3xl mb-5">Follow me</p>
         <ul className="flex gap-4 sm:gap-8">
