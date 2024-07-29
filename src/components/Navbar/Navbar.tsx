@@ -17,8 +17,42 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
 
-  
+  const toggleDrawer = (newOpen: boolean) => () => {
+    setOpen(newOpen);
+  };
+
+  const DrawerList = (
+    <Box
+      sx={{
+        width: 250,
+        background: "#1B1B1B",
+        height: "100%",
+      }}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+    >
+      <List>
+        {routes.map((route, index) => (
+          <Link
+            key={route.path}
+            href={route.path}
+            style={{
+              textDecoration: "none",
+              color: "#FFFFFF",
+            }}
+          >
+            <ListItem key={route?.title} disablePadding>
+              <ListItemButton>
+                <ListItemText primary={route?.title} />
+              </ListItemButton>
+            </ListItem>
+          </Link>
+        ))}
+      </List>
+    </Box>
+  );
 
   return (
     <nav className="flex flex-col items-center py-7 px-8 sm:px-4 md:px-0">
@@ -53,12 +87,15 @@ const Navbar = () => {
         <div className="flex items-center gap-5">
           <ToggleMode />
           <IconButton
+            onClick={toggleDrawer(true)}
             className="sm:hidden text-primary"
           >
             <MenuIcon />
           </IconButton>
         </div>
-        
+        <Drawer open={open} onClose={toggleDrawer(false)}>
+          {DrawerList}
+        </Drawer>
       </div>
     </nav>
   );
