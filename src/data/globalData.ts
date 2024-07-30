@@ -102,4 +102,20 @@ export const projects: Project[] = [
     liveLink: "https://ecommerce-web-three-nu.vercel.app/",
     github: "https://github.com/yashraj970/YesMart-Ecommerce",
   },
+  {
+    title: "Voice Calling AI System",
+    src: "/images/projects/Voice_Calling.png",
+    description:
+      "AI-driven voice calling platform that leverages OpenAI and Twilio to integrate voice chat calling.",
+    liveLink: "",
+    github: "",
+  },
+  {
+    title: "Fire Alarm Management System",
+    src: "/images/projects/Fire_Alarm.png",
+    description:
+      "Fire alarm system with real-time monitoring and alerts, offering critical alarm details to ensure safety.",
+    liveLink: "",
+    github: "",
+  },
 ];
