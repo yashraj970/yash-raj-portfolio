@@ -86,7 +86,9 @@ const Navbar = () => {
           })}
         </ul>
         <div className="flex items-center gap-5">
-          <HireMeModal />
+          <div className="hidden sm:block">
+            <HireMeModal />
+          </div>
           <ToggleMode />
           <IconButton
             onClick={toggleDrawer(true)}
