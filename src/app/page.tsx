@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <div className="w-full min-h-[30rem] h-[39rem] sm:h-full pt-2 m-auto flex flex-col-reverse sm:flex-row justify-start text-center items-center ">
+        <div className="relative heroElem w-full min-h-[30rem] h-[39rem] sm:h-full pt-2 m-auto flex flex-col-reverse sm:flex-row justify-start text-center items-center ">
           <div className="w-10/12 sm:w-[60%]">
             <HeroText />
           </div>
