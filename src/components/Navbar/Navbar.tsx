@@ -14,6 +14,7 @@ import {
   ListItemText,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { HireMeModal } from "./HireMe";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -85,6 +86,7 @@ const Navbar = () => {
           })}
         </ul>
         <div className="flex items-center gap-5">
+          <HireMeModal />
           <ToggleMode />
           <IconButton
             onClick={toggleDrawer(true)}
