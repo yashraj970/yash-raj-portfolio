@@ -2,6 +2,8 @@ import HeroBanner from "@/components/HeroBanner/HeroBanner";
 import HeroText from "@/components/HeroBanner/HeroText";
 import { MacbookScrollDemo } from "@/components/MacbookScroll/MacbookScrollDemo";
 import Projects from "@/components/Projects/Projects";
+import { Button } from "@/components/ui/moving-border";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,6 +12,11 @@ export default function Home() {
         <div className="relative heroElem w-full min-h-[30rem] h-[37rem] sm:h-full pt-2 m-auto flex flex-col-reverse sm:flex-row justify-start text-center items-center ">
           <div className="w-11/12 sm:w-[60%]">
             <HeroText />
+            <div className="mt-5">
+              <Link href={"/about"}>
+                <Button>Tell Me More</Button>
+              </Link>
+            </div>
           </div>
           <div className="w-10/12 sm:w-[30%]">
             <HeroBanner />
