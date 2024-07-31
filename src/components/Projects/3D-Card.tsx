@@ -48,24 +48,28 @@ export function ThreeDCardDemo({
             as={Link}
             href={liveLink}
             target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal"
+            className={`px-4 py-2 rounded-xl text-xs font-normal ${
+              !liveLink && "cursor-not-allowed"
+            }`}
           >
             Try now →
           </CardItem>
-          <CardItem
-            translateZ={20}
-            as={Link}
-            href={github}
-            target="__blank"
-            className="px-3 py-2 rounded-xl bg-black dark:bg-white text-xs font-bold"
-          >
-            <Image
-              src="/static/icons/github-f.svg"
-              width={16}
-              height={16}
-              alt="Github Icon"
-            />
-          </CardItem>
+          {github && (
+            <CardItem
+              translateZ={20}
+              as={Link}
+              href={github}
+              target="__blank"
+              className="px-3 py-2 rounded-xl bg-black dark:bg-white text-xs font-bold"
+            >
+              <Image
+                src="/static/icons/github-f.svg"
+                width={16}
+                height={16}
+                alt="Github Icon"
+              />
+            </CardItem>
+          )}
         </div>
       </CardBody>
     </CardContainer>
