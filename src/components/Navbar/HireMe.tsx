@@ -9,6 +9,9 @@ import {
 } from "../ui/animated-modal";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Label } from "../ui/label";
+import { Input } from "../ui/input";
+import { cn } from "@/lib/utils";
 
 export function HireMeModal() {
   const images = [
@@ -38,7 +41,7 @@ export function HireMeModal() {
               </span>{" "}
               📩
             </h4>
-            <div className="flex justify-center items-center">
+            {/* <div className="flex justify-center items-center">
               {images.map((image, idx) => (
                 <motion.div
                   key={"images" + idx}
@@ -66,8 +69,25 @@ export function HireMeModal() {
                   />
                 </motion.div>
               ))}
+            </div> */}
+            <div className="flex flex-col gap-4">
+              <LabelInputContainer>
+                <Label htmlFor="name">Name</Label>
+                <Input id="name" placeholder="Name" />
+              </LabelInputContainer>
+              <LabelInputContainer>
+                <Label htmlFor="email">Email Address</Label>
+                <Input
+                  id="email"
+                  placeholder="project@gmail.com"
+                  type="email"
+                />
+              </LabelInputContainer>
+              <LabelInputContainer>
+                <Label htmlFor="email">Project Description</Label>
+                <Input id="project" placeholder="Project Description" />
+              </LabelInputContainer>
             </div>
-            <div></div>
           </ModalContent>
           <ModalFooter className="gap-4">
             <button className="px-2 py-1 bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28">
@@ -82,3 +102,17 @@ export function HireMeModal() {
     </div>
   );
 }
+
+const LabelInputContainer = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return (
+    <div className={cn("flex flex-col space-y-2 w-full", className)}>
+      {children}
+    </div>
+  );
+};
