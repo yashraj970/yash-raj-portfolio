@@ -110,24 +110,21 @@ export const projects: Project[] = [
     content: [
       {
         image: "/images/projects/ProductPage.png",
-        detailTitle:
-          "The first rule of Apple club is that you boast about Apple club.",
+        detailTitle: "Product Page: Shop the Latest Fashion and Accessories",
         detailDesc:
-          "Keep a journal, quickly jot down a grocery list, and take amazing class notes. Want to convert those notes to text? No problem. Langotiya jeetu ka mara hua yaar is ready to capture every thought.",
+          "Explore our diverse collection of fashion items, featuring the latest trends and styles. Each product card displays an image, name, price, category, and offers quick access to detailed product information and an option to add the item to your cart. Happy shopping!",
       },
       {
         image: "/images/projects/CartPage.png",
-        detailTitle:
-          "The first rule of Apple club is that you boast about Apple club.",
+        detailTitle: "Shopping Cart",
         detailDesc:
-          "Keep a journal, quickly jot down a grocery list, and take amazing class notes. Want to convert those notes to text? No problem. Langotiya jeetu ka mara hua yaar is ready to capture every thought.",
+          "Review the items in your cart, adjust quantities, and proceed to checkout. Each product in the cart shows the name, image, price, category, and quantity controls for easy adjustments. Below the product list, you can select a delivery address and see the subtotal before proceeding to checkout.",
       },
       {
         image: "/images/projects/CheckoutPage.png",
-        detailTitle:
-          "The first rule of Apple club is that you boast about Apple club.",
+        detailTitle: "Multi-Page Checkout",
         detailDesc:
-          "Keep a journal, quickly jot down a grocery list, and take amazing class notes. Want to convert those notes to text? No problem. Langotiya jeetu ka mara hua yaar is ready to capture every thought.",
+          "Complete your purchase in a few easy steps. Start by providing your billing information, then review and select your shipping address, and finally, proceed to payment. Each step is clearly marked, guiding you through the process to ensure a smooth and secure transaction.",
       },
     ],
   },
