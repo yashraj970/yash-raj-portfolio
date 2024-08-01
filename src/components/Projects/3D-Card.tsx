@@ -38,7 +38,12 @@ export function ThreeDCardDemo({
       return (
         <span onClick={handleOpen}>
           {text.substring(0, length)}
-          <span className="cursor-pointer">... view more</span>
+          <span className="cursor-pointer">
+            ...
+            <span className="px-1 py-0.5 ml-1 rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200">
+              view more
+            </span>
+          </span>
         </span>
       );
     }
@@ -60,10 +65,9 @@ export function ThreeDCardDemo({
             translateZ="60"
             className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
           >
-            {/* {description} */}
-            {truncateText(description, 65)}
+            {truncateText(description, 70)}
           </CardItem>
-          <CardItem translateZ="100" className="w-full mt-4">
+          <CardItem translateZ="100" className="w-full mt-4 cursor-pointer">
             <Image
               src={src}
               height="1000"
@@ -105,6 +109,7 @@ export function ThreeDCardDemo({
         </CardBody>
       </CardContainer>
 
+      {/* View More Modal */}
       <AnimatePresence>
         {open && (
           <div className="fixed inset-0 h-screen z-50 overflow-auto">
@@ -127,11 +132,12 @@ export function ThreeDCardDemo({
               >
                 <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
               </button>
-              <motion.p className="text-base font-medium text-black dark:text-white">
-                {description}
-              </motion.p>
-              <motion.p className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white">
+
+              <motion.p className="text-2xl md:text-4xl font-semibold text-neutral-700 dark:text-white">
                 {title}
+              </motion.p>
+              <motion.p className="text-base font-medium text-black dark:text-white my-1">
+                {description}
               </motion.p>
               {/* <div className="py-10">{content}</div> */}
             </motion.div>
