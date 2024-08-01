@@ -86,12 +86,18 @@ export const footer: Footer = {
 };
 
 // Projects
+export interface content {
+  image: string;
+  detailTitle: string;
+  detailDesc: string;
+}
 interface Project {
   title: string;
   src: string;
   description: string;
   liveLink: string;
   github: string;
+  content: content[];
 }
 export const projects: Project[] = [
   {
@@ -101,6 +107,15 @@ export const projects: Project[] = [
       "Comprehensive ecommerce platform featuring all the essential ecommerce features.",
     liveLink: "https://ecommerce-web-three-nu.vercel.app/",
     github: "https://github.com/yashraj970/YesMart-Ecommerce",
+    content: [
+      {
+        image: "/images/projects/YesMart_Ecommerce.png",
+        detailTitle:
+          "The first rule of Apple club is that you boast about Apple club.",
+        detailDesc:
+          "Keep a journal, quickly jot down a grocery list, and take amazing class notes. Want to convert those notes to text? No problem. Langotiya jeetu ka mara hua yaar is ready to capture every thought.",
+      },
+    ],
   },
   {
     title: "Voice Calling AI System",
@@ -109,6 +124,7 @@ export const projects: Project[] = [
       "AI-driven voice calling platform that leverages OpenAI and Twilio to integrate voice chat calling.",
     liveLink: "",
     github: "",
+    content: [],
   },
   {
     title: "Fire Alarm Management System",
@@ -117,5 +133,6 @@ export const projects: Project[] = [
       "Fire alarm system with real-time monitoring and alerts, offering critical alarm details to ensure safety.",
     liveLink: "",
     github: "",
+    content: [],
   },
 ];
