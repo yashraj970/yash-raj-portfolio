@@ -6,6 +6,7 @@ import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { IconX } from "@tabler/icons-react";
+import { content } from "@/data/globalData";
 
 export function ThreeDCardDemo({
   title,
@@ -13,12 +14,14 @@ export function ThreeDCardDemo({
   src,
   liveLink,
   github,
+  content,
 }: {
   title: string;
   description: string;
   src: string;
   liveLink: string;
   github: string;
+  content: content[];
 }) {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -140,28 +143,26 @@ export function ThreeDCardDemo({
                 {description}
               </motion.p>
               <div className="py-5">
-                <div
-                  // key={"dummy-content" + index}
-                  className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
-                >
-                  <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-                    <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                      The first rule of Apple club is that you boast about Apple
-                      club.
-                    </span>{" "}
-                    Keep a journal, quickly jot down a grocery list, and take
-                    amazing class notes. Want to convert those notes to text? No
-                    problem. Langotiya jeetu ka mara hua yaar is ready to
-                    capture every thought.
-                  </p>
-                  <Image
-                    src=""
-                    alt="Macbook mockup from Aceternity UI"
-                    height="500"
-                    width="500"
-                    className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-                  />
-                </div>
+                {content?.map((item, index) => (
+                  <div
+                    key={"content" + index}
+                    className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+                  >
+                    <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                      <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                        {item?.detailTitle}
+                      </span>{" "}
+                      {item?.detailDesc}
+                    </p>
+                    <Image
+                      src={item?.image}
+                      alt="content image"
+                      height="500"
+                      width="500"
+                      className="md:w-4/5 md:h-/w-4/5 h-full w-full mx-auto object-contain"
+                    />
+                  </div>
+                ))}
               </div>
             </motion.div>
           </div>
