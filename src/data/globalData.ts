@@ -109,7 +109,21 @@ export const projects: Project[] = [
     github: "https://github.com/yashraj970/YesMart-Ecommerce",
     content: [
       {
-        image: "/images/projects/YesMart_Ecommerce.png",
+        image: "/images/projects/ProductPage.png",
+        detailTitle:
+          "The first rule of Apple club is that you boast about Apple club.",
+        detailDesc:
+          "Keep a journal, quickly jot down a grocery list, and take amazing class notes. Want to convert those notes to text? No problem. Langotiya jeetu ka mara hua yaar is ready to capture every thought.",
+      },
+      {
+        image: "/images/projects/CartPage.png",
+        detailTitle:
+          "The first rule of Apple club is that you boast about Apple club.",
+        detailDesc:
+          "Keep a journal, quickly jot down a grocery list, and take amazing class notes. Want to convert those notes to text? No problem. Langotiya jeetu ka mara hua yaar is ready to capture every thought.",
+      },
+      {
+        image: "/images/projects/CheckoutPage.png",
         detailTitle:
           "The first rule of Apple club is that you boast about Apple club.",
         detailDesc:
