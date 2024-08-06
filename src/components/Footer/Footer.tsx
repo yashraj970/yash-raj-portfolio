@@ -117,7 +117,7 @@ function Footer() {
               href={link.url}
               target="__blank"
               key={link.id}
-              className="bg-gray-200 dark:bg-gray-700 cursor-pointer rounded-lg shadow-sm p-3 sm:p-3.5 duration-300"
+              className="bg-gray-200 dark:bg-gray-700 cursor-pointer rounded-full shadow-sm p-3 sm:p-3.5 duration-300"
             >
               <i className="text-primary">{link.icon}</i>
             </a>
