@@ -3,6 +3,7 @@ import HeroText from "@/components/HeroBanner/HeroText";
 import { MacbookScrollDemo } from "@/components/MacbookScroll/MacbookScrollDemo";
 import { HireMeModal } from "@/components/Navbar/HireMe";
 import Projects from "@/components/Projects/Projects";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { Button } from "@/components/ui/moving-border";
 import Link from "next/link";
 
@@ -35,6 +36,17 @@ export default function Home() {
           Few of my favorite projects
         </h1>
         <Projects />
+      </div>
+      <div className="m-2 mb-10 flex justify-center text-center">
+        <Link href={"/projects"}>
+          <HoverBorderGradient
+            containerClassName="rounded-full"
+            as="button"
+            className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+          >
+            <span>View All</span>
+          </HoverBorderGradient>
+        </Link>
       </div>
     </>
   );
