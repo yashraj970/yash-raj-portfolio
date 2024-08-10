@@ -13,77 +13,44 @@ export const routes = [
   },
 ];
 
-type FooterCol = {
-  title: string;
-  links: {
-    name: string;
-    link: string;
-    icon?: string;
-    leavesWebsite: boolean;
-  }[];
-};
+//Footer
 
-type Footer = {
-  columns: FooterCol[];
-  support: {
-    buymeacoffee: string;
-    paypal: string;
-    message: string;
-  };
-};
-
-export const footer: Footer = {
-  columns: [
-    {
-      title: "Pages",
-      links: [
-        {
-          name: "Home",
-          link: "/",
-          leavesWebsite: false,
-        },
-        {
-          name: "Projects",
-          link: "/projects",
-          leavesWebsite: false,
-        },
-        {
-          name: "About",
-          link: "/about",
-          leavesWebsite: false,
-        },
-      ],
-    },
-    {
-      title: "Social",
-      links: [
-        {
-          name: "GitHub",
-          link: "https://github.com/yashraj970",
-          icon: "/static/icons/github-f.svg",
-          leavesWebsite: true,
-        },
-        {
-          name: "LinkedIn",
-          link: "https://www.linkedin.com/in/yash-raj-a9037b242/",
-          icon: "/static/icons/linkedin-f.svg",
-          leavesWebsite: true,
-        },
-        {
-          name: "Email",
-          link: "mailto:itsyashraj970@gmail.com",
-          icon: "/static/icons/mail-f.svg",
-          leavesWebsite: true,
-        },
-      ],
-    },
-  ],
-  support: {
-    buymeacoffee: "braydenw",
-    paypal: "braydentw",
-    message: "I appreciate your support very much! 💙",
+interface Footer {
+  id: number;
+  name: string;
+  designation?: string;
+  image: string;
+  url: string;
+}
+export const footer: Footer[] = [
+  {
+    id: 1,
+    name: "Portfolio",
+    designation: "Yash Raj",
+    image: "/images/footerIcons/portfolio.jpg",
+    url: "https://yash-raj-portfolio.vercel.app/",
   },
-};
+  {
+    id: 2,
+    name: "Github",
+    designation: "yashraj970",
+    image: "/images/footerIcons/github.png",
+    url: "https://github.com/yashraj970",
+  },
+  {
+    id: 3,
+    name: "LinkedIn",
+    image: "/images/footerIcons/linekdin.jpeg",
+    url: "https://www.linkedin.com/in/yash-raj-a9037b242/",
+  },
+  {
+    id: 4,
+    name: "Email",
+    designation: "itsyashraj970@gmail.com",
+    image: "/images/footerIcons/gmail.jpeg",
+    url: "mailto:itsyashraj970@gmail.com",
+  },
+];
 
 // Projects
 export interface content {
