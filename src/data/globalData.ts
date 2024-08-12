@@ -60,7 +60,7 @@ export const projects: Project[] = [
     title: "Voice Calling AI System",
     src: "/images/projects/Voice_Calling.png",
     description:
-      "AI-driven voice calling platform that leverages OpenAI and Twilio to integrate voice chat calling.",
+      "AI-driven voice calling platform that leverages OpenAI and Twilio to integrate voice chat calling functionalities, enabling seamless and intelligent communication experiences.",
     liveLink: "",
     github: "",
     content: [
@@ -81,6 +81,46 @@ export const projects: Project[] = [
         detailTitle: "Call Logs: Access and Review Call Logs",
         detailDesc:
           "Listen to recordings and review the history of all calls made through the system. Search by date, view detailed transcripts, and keep track of your communication efforts with an intuitive, user-friendly interface designed for easy navigation and access.",
+      },
+    ],
+  },
+  {
+    title: "Food Delivery WebApp",
+    src: "/",
+    description:
+      "A food delivery application built using React.js and .NET, featuring real-time tracking of delivery partners via SignalR, seamless multi-step checkout, secure payments integrated with Razorpay API, and accurate location tracking with Google Maps API. This platform also includes a registration system for restaurants, enabling them to manage and showcase their menus efficiently.",
+    liveLink: "",
+    github: "",
+    content: [
+      {
+        image: "",
+        detailTitle: "Restaurant Page: See Nearby Restaurant",
+        detailDesc:
+          "This page allows users to explore nearby restaurants within a 10 km radius. Integrated with Google Maps API, the page provides accurate location tracking, making it easy for users to discover dining options close to them. Each restaurant listing includes essential details like menu offerings, ratings, and delivery time estimates.",
+      },
+      {
+        image: "/",
+        detailTitle: "Cart Page: Review Your Order",
+        detailDesc:
+          "On this page, users can review the items they've added to their cart before proceeding to checkout. It offers an intuitive interface for adjusting quantities, removing items, and applying discount codes. Users can view the total cost and prepare for a seamless checkout process.",
+      },
+      {
+        image: "/",
+        detailTitle: "Payment Page: Secure Your Order",
+        detailDesc:
+          "The payment page ensures a secure transaction process, integrated with Razorpay API. Users can select their preferred payment method, confirm their order details, and finalize the purchase with confidence. The page is designed to be user-friendly, offering a smooth and secure checkout experience.",
+      },
+      {
+        image: "/",
+        detailTitle: "Real-Time Tracking: Follow Your Delivery",
+        detailDesc:
+          "After placing an order, users can track their delivery partner in real-time. The page utilizes SignalR for instant updates and Google Maps API for accurate tracking, providing users with the delivery partner's current location and estimated time of arrival.",
+      },
+      {
+        image: "/",
+        detailTitle: "Restaurant Registration: Manage Your Menu",
+        detailDesc:
+          "This page is designed for restaurant owners to register their business on the platform. After registration, they can efficiently manage their menu listings, update meal offerings, and showcase their restaurant to a wider audience.",
       },
     ],
   },
