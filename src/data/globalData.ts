@@ -77,7 +77,7 @@ export const projects: Project[] = [
           "Seamlessly upload and manage contact lists for your calling campaigns. Assign contacts to specific AI assistants, view, edit, and delete lists as needed. This page provides a streamlined process for organizing your calling targets to ensure efficient outreach.",
       },
       {
-        image: "/images/projects/callLogs.png",
+        image: "/images/projects/call_log.png",
         detailTitle: "Call Logs: Access and Review Call Logs",
         detailDesc:
           "Listen to recordings and review the history of all calls made through the system. Search by date, view detailed transcripts, and keep track of your communication efforts with an intuitive, user-friendly interface designed for easy navigation and access.",
