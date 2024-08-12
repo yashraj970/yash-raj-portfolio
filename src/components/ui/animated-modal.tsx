@@ -159,6 +159,7 @@ export const ModalFooter = ({
   children: ReactNode;
   className?: string;
 }) => {
+  const { setOpen } = useModal();
   return (
     <div
       className={cn(
@@ -166,6 +167,12 @@ export const ModalFooter = ({
         className
       )}
     >
+      <button
+        onClick={() => setOpen(false)}
+        className="px-2 py-1 bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28"
+      >
+        Cancel
+      </button>
       {children}
     </div>
   );
