@@ -19,7 +19,7 @@ export interface content {
   detailTitle: string;
   detailDesc: string;
 }
-interface Project {
+export interface Project {
   title: string;
   src: string;
   description: string;
