@@ -1,8 +1,8 @@
 import React from "react";
 import { ThreeDCardDemo } from "./3D-Card";
-import { projects } from "@/data/globalData";
+import { Project } from "@/data/globalData";
 
-const Projects = () => {
+const Projects = ({ projects }: { projects: Project[] }) => {
   return (
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
