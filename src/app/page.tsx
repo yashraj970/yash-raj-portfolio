@@ -5,6 +5,7 @@ import { HireMeModal } from "@/components/Navbar/HireMe";
 import Projects from "@/components/Projects/Projects";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { Button } from "@/components/ui/moving-border";
+import { projects } from "@/data/globalData";
 import Link from "next/link";
 
 export default function Home() {
@@ -35,7 +36,7 @@ export default function Home() {
         <h1 className="w-11/12 mx-auto text-xl md:text-4xl font-bold text-neutral-800 dark:text-neutral-200 font-sans mt-8">
           Few of my favorite projects
         </h1>
-        <Projects />
+        <Projects projects={projects.slice(0, 3)} />
       </div>
       <div className="m-2 mb-10 flex justify-center text-center">
         <Link href={"/projects"}>
