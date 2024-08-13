@@ -1,4 +1,5 @@
 import Projects from "@/components/Projects/Projects";
+import { projects } from "@/data/globalData";
 import React from "react";
 
 const page = () => {
@@ -8,7 +9,7 @@ const page = () => {
         Projects portfolio
       </h2>
       <div>
-        <Projects />
+        <Projects projects={projects} />
       </div>
     </div>
   );
