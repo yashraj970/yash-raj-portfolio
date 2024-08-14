@@ -125,6 +125,17 @@ export const projects: Project[] = [
     ],
   },
   {
+    title: "Leave Management System",
+    src: "/",
+    description:
+      "A fully functional leave management system designed to simplify leave requests for employees and enable efficient approval workflows for managers. The platform features real-time email notifications, restricted access for managers, a change password system with API integration using Axios, and a dynamic notification system with conditional CSS styles. Employees can apply for leaves, view their leave history, and track current requests, with validation checks on both client and server sides ensuring error-free submissions.",
+    liveLink: "",
+    github: "",
+    content: [
+      
+    ],
+  },
+  {
     title: "Fire Alarm Management System",
     src: "/images/projects/Fire_Alarm.png",
     description:
