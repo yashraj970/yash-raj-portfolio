@@ -132,7 +132,30 @@ export const projects: Project[] = [
     liveLink: "",
     github: "",
     content: [
-      
+      {
+        image: "",
+        detailTitle: "Employee Dashboard",
+        detailDesc:
+          "View your leave balance, recent requests, and current status. Navigate through the system to apply for new leaves or check your leave history.",
+      },
+      {
+        image: "/",
+        detailTitle: "Leave Application: Apply for Leave",
+        detailDesc:
+          "Easily apply for leaves by selecting the type, duration, and adding any necessary comments. Track the status of your application and receive real-time updates.",
+      },
+      {
+        image: "/",
+        detailTitle: "Leave Approval: Manager's Approval Page",
+        detailDesc:
+          "Manage all pending leave requests efficiently. Review, approve, or reject requests, and maintain organized records of all employee leaves.",
+      },
+      {
+        image: "/",
+        detailTitle: "Notifications: Real-Time Email Notifications",
+        detailDesc:
+          "Stay informed with dynamic notifications indicating read and unread status. Receive instant updates on new leave requests and changes to your submissions.",
+      },
     ],
   },
   {
