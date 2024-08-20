@@ -154,13 +154,15 @@ export function ThreeDCardDemo({
                       </span>{" "}
                       {item?.detailDesc}
                     </p>
-                    <Image
-                      src={item?.image}
-                      alt="content image"
-                      height="500"
-                      width="500"
-                      className="md:w-4/5 md:h-/w-4/5 h-full w-full mx-auto object-contain mt-3 rounded-lg"
-                    />
+                    {item?.image && (
+                      <Image
+                        src={item?.image}
+                        alt="content image"
+                        height="500"
+                        width="500"
+                        className="md:w-4/5 md:h-/w-4/5 h-full w-full mx-auto object-contain mt-3 rounded-lg"
+                      />
+                    )}
                   </div>
                 ))}
               </div>
