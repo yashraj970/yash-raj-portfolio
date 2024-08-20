@@ -86,7 +86,7 @@ export const projects: Project[] = [
   },
   {
     title: "Food Delivery WebApp",
-    src: "/",
+    src: "/images/projects/FoodDelivery.png",
     description:
       "A food delivery application built using React.js and .NET, featuring real-time tracking of delivery partners via SignalR, seamless multi-step checkout, secure payments integrated with Razorpay API, and accurate location tracking with Google Maps API. This platform also includes a registration system for restaurants, enabling them to manage and showcase their menus efficiently.",
     liveLink: "",
