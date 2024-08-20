@@ -99,25 +99,25 @@ export const projects: Project[] = [
           "This page allows users to explore nearby restaurants within a 10 km radius. Integrated with Google Maps API, the page provides accurate location tracking, making it easy for users to discover dining options close to them. Each restaurant listing includes essential details like menu offerings, ratings, and delivery time estimates.",
       },
       {
-        image: "/",
+        image: "",
         detailTitle: "Cart Page: Review Your Order",
         detailDesc:
           "On this page, users can review the items they've added to their cart before proceeding to checkout. It offers an intuitive interface for adjusting quantities, removing items, and applying discount codes. Users can view the total cost and prepare for a seamless checkout process.",
       },
       {
-        image: "/",
+        image: "",
         detailTitle: "Payment Page: Secure Your Order",
         detailDesc:
           "The payment page ensures a secure transaction process, integrated with Razorpay API. Users can select their preferred payment method, confirm their order details, and finalize the purchase with confidence. The page is designed to be user-friendly, offering a smooth and secure checkout experience.",
       },
       {
-        image: "/",
+        image: "",
         detailTitle: "Real-Time Tracking: Follow Your Delivery",
         detailDesc:
           "After placing an order, users can track their delivery partner in real-time. The page utilizes SignalR for instant updates and Google Maps API for accurate tracking, providing users with the delivery partner's current location and estimated time of arrival.",
       },
       {
-        image: "/",
+        image: "",
         detailTitle: "Restaurant Registration: Manage Your Menu",
         detailDesc:
           "This page is designed for restaurant owners to register their business on the platform. After registration, they can efficiently manage their menu listings, update meal offerings, and showcase their restaurant to a wider audience.",
@@ -126,7 +126,7 @@ export const projects: Project[] = [
   },
   {
     title: "Leave Management System",
-    src: "/",
+    src: "",
     description:
       "A fully functional leave management system designed to simplify leave requests for employees and enable efficient approval workflows for managers. The platform features real-time email notifications, restricted access for managers, a change password system with API integration using Axios, and a dynamic notification system with conditional CSS styles. Employees can apply for leaves, view their leave history, and track current requests, with validation checks on both client and server sides ensuring error-free submissions.",
     liveLink: "",
@@ -139,19 +139,19 @@ export const projects: Project[] = [
           "View your leave balance, recent requests, and current status. Navigate through the system to apply for new leaves or check your leave history.",
       },
       {
-        image: "/",
+        image: "",
         detailTitle: "Leave Application: Apply for Leave",
         detailDesc:
           "Easily apply for leaves by selecting the type, duration, and adding any necessary comments. Track the status of your application and receive real-time updates.",
       },
       {
-        image: "/",
+        image: "",
         detailTitle: "Leave Approval: Manager's Approval Page",
         detailDesc:
           "Manage all pending leave requests efficiently. Review, approve, or reject requests, and maintain organized records of all employee leaves.",
       },
       {
-        image: "/",
+        image: "",
         detailTitle: "Notifications: Real-Time Email Notifications",
         detailDesc:
           "Stay informed with dynamic notifications indicating read and unread status. Receive instant updates on new leave requests and changes to your submissions.",
