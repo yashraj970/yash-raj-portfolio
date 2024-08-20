@@ -139,7 +139,7 @@ export function ThreeDCardDemo({
               <motion.p className="text-2xl md:text-4xl font-semibold text-neutral-700 dark:text-white">
                 {title}
               </motion.p>
-              <motion.p className="text-base font-medium text-black dark:text-white my-1">
+              <motion.p className="text-base font-medium text-black dark:text-white mt-3">
                 {description}
               </motion.p>
               <div className="py-5">
