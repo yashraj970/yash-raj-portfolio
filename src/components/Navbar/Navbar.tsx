@@ -58,7 +58,7 @@ const Navbar = () => {
   return (
     <nav className="flex flex-col items-center py-7 px-8 sm:px-4 md:px-0">
       <div className="flex justify-between max-w-6xl w-full">
-        <Link href={"/"}>
+        <Link href="/">
           <div className="flex gap-[1px]">
             {"Yash Raj".split("").map((letter, index) => {
               return (
