@@ -17,7 +17,7 @@ Welcome to my personal portfolio! This project is a showcase of my skills, proje
 - **Smooth Animations**: Integrated throughout the site to create a fluid and visually appealing user experience.
 - **Responsive Design**: Fully responsive layout that adapts to different screen sizes and devices.
 - **Projects Showcase**: A dedicated section to display and detail the projects I've worked on, including links to live demos and source code.
-- **About Section**:  Information about me, my background, and my journey in web development.
+- **About Section**: Features a sleek and minimal carousel implementation to showcase my journey, skills, and experiences in a visually appealing way. Information about me, my background, and my journey in web development.
 - **Contact Form**: A functional contact form that allows visitors to reach out directly from the website.
 
 ## Technologies Used
