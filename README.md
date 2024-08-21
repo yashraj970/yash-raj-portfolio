@@ -6,10 +6,7 @@ Welcome to my personal portfolio! This project is a showcase of my skills, proje
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
 - [Setup and Installation](#setup-and-installation)
-- [Screenshots](#screenshots)
-- [Future Enhancements](#future-enhancements)
 - [Contact](#contact)
 
 ## Features
@@ -35,11 +32,6 @@ Welcome to my personal portfolio! This project is a showcase of my skills, proje
   - Git for version control
   - VS Code for development
 
-## Project Structure
-
-The project follows a structured approach to ensure scalability and maintainability.
-
-
 
 ## Setup and Installation
 
@@ -56,3 +48,12 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+## Contact
+Feel free to reach out to me through any of the following channels:
+
+Email: itsyashraj970@gmail.com
+LinkedIn: [Yash Raj](https://www.linkedin.com/in/yash-raj-a9037b242/)
+GitHub: yashraj970
+Thank you for visiting my portfolio! I hope you enjoy exploring my work as much as I enjoyed creating it.
