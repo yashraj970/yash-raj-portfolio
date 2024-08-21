@@ -11,27 +11,27 @@ Welcome to my personal portfolio! This project is a showcase of my skills, proje
 
 ## Features
 
+- **Seamless Animations**: Every interaction feels fluid and natural, thanks to Framer Motion, making the portfolio engaging and user-friendly.
 - **Dark Mode/Light Mode Toggle**: Easily switch between dark and light themes to enhance the user experience.
 - **Interactive Footer**: Includes animated tooltips that appear on hover, providing a sleek and engaging interface.
 - **Smooth Animations**: Integrated throughout the site to create a fluid and visually appealing user experience.
 - **Responsive Design**: Fully responsive layout that adapts to different screen sizes and devices.
 - **Projects Showcase**: A dedicated section to display and detail the projects I've worked on, including links to live demos and source code.
-- **About Section**: Information about me, my background, and my journey in web development.
+- **About Section**:  Information about me, my background, and my journey in web development.
 - **Contact Form**: A functional contact form that allows visitors to reach out directly from the website.
 
 ## Technologies Used
 
-- **Frontend**: 
+- **Frontend**:
   - React.js
   - Next.js
   - Framer Motion (for animations)
   - Tailwind CSS
-- **Deployment**: 
+- **Deployment**:
   - Vercel
-- **Others**: 
+- **Others**:
   - Git for version control
   - VS Code for development
-
 
 ## Setup and Installation
 
@@ -49,8 +49,8 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
 ## Contact
+
 Feel free to reach out to me through any of the following channels:
 
 Email: itsyashraj970@gmail.com
