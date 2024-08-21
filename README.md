@@ -41,7 +41,7 @@ The project follows a structured approach to ensure scalability and maintainabil
 
 
 
-## Getting Started
+## Setup and Installation
 
 First, run the development server:
 
