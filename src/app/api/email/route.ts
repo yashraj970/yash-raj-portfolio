@@ -6,9 +6,9 @@ export async function POST(req: Request) {
   try {
     transporter.sendMail({
       ...mailOptions,
-      subject: "Email From Portfolio",
-      text: "Test String",
-      html: `<h1>Mail From - ${data.name}</h1>`,
+      subject: "Contact From Portfolio",
+      text: "Contact Message",
+      html: `<h3>Message from ${data.name}</h3><p><strong>Email:</strong> ${data.email}</p><p><strong>Message:</strong> ${data.project}</p>`,
     });
     return NextResponse.json({ message: "Mail Sent Succesfully" });
   } catch (error) {
