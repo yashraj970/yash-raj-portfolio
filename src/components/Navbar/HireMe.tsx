@@ -23,8 +23,10 @@ const initialState = {
 
 export function HireMeModal() {
   const [data, setData] = useState(initialState);
+  const [isLoading, setLoading] = useState(false);
 
   const handleSendEmail = () => {
+    setLoading(true);
     // axios
     //   .get("/api/email")
     //   .then((res) => {
@@ -139,6 +141,7 @@ export function HireMeModal() {
                 type="submit"
                 className="bg-black text-white dark:bg-white dark:text-black text-sm px-2 py-1 rounded-md border border-black w-28"
               >
+                {isLoading ? <CircularProgress /> : "Send"}
               </button>
             </ModalFooter>
           </form>
