@@ -43,9 +43,7 @@ export function HireMeModal() {
     e.preventDefault();
     setLoading(true);
     axios
-      .post("/api/email", {
-        name: "Yash",
-      })
+      .post("/api/email", data)
       .then((res) => {
         console.log(res);
         setLoading(false);
