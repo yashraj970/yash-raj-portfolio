@@ -10,7 +10,8 @@ export async function GET(req: Request) {
 }
 
 export async function POST(req: Request) {
+  // const { name } = req.body;
   return NextResponse.json({
-    data: req.body,
+    name: "Yash",
   });
 }
