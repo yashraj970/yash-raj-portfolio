@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { ChangeEvent, useState } from "react";
 import {
   Modal,
   ModalBody,
@@ -13,17 +13,38 @@ import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { cn } from "@/lib/utils";
 import axios from "axios";
+import { CircularProgress } from "@mui/material";
+
+const initialState = {
+  name: "",
+  email: "",
+  project: "",
+};
 
 export function HireMeModal() {
+  const [data, setData] = useState(initialState);
+
   const handleSendEmail = () => {
-    axios
-      .get("/api/email")
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // axios
+    //   .get("/api/email")
+    //   .then((res) => {
+    //     console.log(res);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
+  };
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { id, value } = e.target;
+    setData((prev) => {
+      return { ...prev, [id]: value };
+    });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    handleSendEmail();
   };
   const images = [
     "https://images.unsplash.com/photo-1517322048670-4fba75cbbb62?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -44,15 +65,16 @@ export function HireMeModal() {
           </div>
         </ModalTrigger>
         <ModalBody>
-          <ModalContent>
-            <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8">
-              Get in{" "}
-              <span className="px-1 py-0.5 rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200">
-                Touch!
-              </span>{" "}
-              📩
-            </h4>
-            {/* <div className="flex justify-center items-center">
+          <form onSubmit={handleSubmit}>
+            <ModalContent>
+              <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8">
+                Get in{" "}
+                <span className="px-1 py-0.5 rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200">
+                  Touch!
+                </span>{" "}
+                📩
+              </h4>
+              {/* <div className="flex justify-center items-center">
               {images.map((image, idx) => (
                 <motion.div
                   key={"images" + idx}
@@ -81,33 +103,45 @@ export function HireMeModal() {
                 </motion.div>
               ))}
             </div> */}
-            <div className="flex flex-col gap-4">
-              <LabelInputContainer>
-                <Label htmlFor="name">Name</Label>
-                <Input id="name" placeholder="Name" />
-              </LabelInputContainer>
-              <LabelInputContainer>
-                <Label htmlFor="email">Email Address</Label>
-                <Input
-                  id="email"
-                  placeholder="project@gmail.com"
-                  type="email"
-                />
-              </LabelInputContainer>
-              <LabelInputContainer>
-                <Label htmlFor="email">Project Description</Label>
-                <Input id="project" placeholder="Project Description" />
-              </LabelInputContainer>
-            </div>
-          </ModalContent>
-          <ModalFooter className="gap-4">
-            <button
-              onClick={handleSendEmail}
-              className="bg-black text-white dark:bg-white dark:text-black text-sm px-2 py-1 rounded-md border border-black w-28"
-            >
-              Send
-            </button>
-          </ModalFooter>
+              <div className="flex flex-col gap-4">
+                <LabelInputContainer>
+                  <Label htmlFor="name">Name</Label>
+                  <Input
+                    required
+                    onChange={handleChange}
+                    id="name"
+                    placeholder="Name"
+                  />
+                </LabelInputContainer>
+                <LabelInputContainer>
+                  <Label htmlFor="email">Email Address</Label>
+                  <Input
+                    id="email"
+                    required
+                    placeholder="project@gmail.com"
+                    type="email"
+                    onChange={handleChange}
+                  />
+                </LabelInputContainer>
+                <LabelInputContainer>
+                  <Label htmlFor="project">Project Description</Label>
+                  <Input
+                    required
+                    id="project"
+                    onChange={handleChange}
+                    placeholder="Project Description"
+                  />
+                </LabelInputContainer>
+              </div>
+            </ModalContent>
+            <ModalFooter className="gap-4">
+              <button
+                type="submit"
+                className="bg-black text-white dark:bg-white dark:text-black text-sm px-2 py-1 rounded-md border border-black w-28"
+              >
+              </button>
+            </ModalFooter>
+          </form>
         </ModalBody>
       </Modal>
     </div>
