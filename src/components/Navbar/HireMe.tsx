@@ -27,14 +27,16 @@ export function HireMeModal() {
 
   const handleSendEmail = () => {
     setLoading(true);
-    // axios
-    //   .get("/api/email")
-    //   .then((res) => {
-    //     console.log(res);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
+    axios
+      .post("/api/email", {
+        name: "Yash",
+      })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
