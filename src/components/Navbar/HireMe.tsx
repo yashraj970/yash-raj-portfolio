@@ -113,6 +113,7 @@ export function HireMeModal() {
                     onChange={handleChange}
                     id="name"
                     placeholder="Name"
+                    value={data.name}
                   />
                 </LabelInputContainer>
                 <LabelInputContainer>
@@ -123,6 +124,7 @@ export function HireMeModal() {
                     placeholder="project@gmail.com"
                     type="email"
                     onChange={handleChange}
+                    value={data.email}
                   />
                 </LabelInputContainer>
                 <LabelInputContainer>
@@ -131,6 +133,7 @@ export function HireMeModal() {
                     required
                     id="project"
                     onChange={handleChange}
+                    value={data.project}
                     placeholder="Project Description"
                   />
                 </LabelInputContainer>
