@@ -14,7 +14,7 @@ import { Input } from "../ui/input";
 import { cn } from "@/lib/utils";
 import axios from "axios";
 import { CircularProgress } from "@mui/material";
-import { notifySuccess } from "../../utils/toast";
+import { notifyError, notifySuccess } from "../../utils/toast";
 
 const images = [
   "https://images.unsplash.com/photo-1517322048670-4fba75cbbb62?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -51,8 +51,9 @@ export function HireMeModal() {
         notifySuccess(res?.data?.message || "Details Sent");
         setData(initialState);
       })
-      .catch((err) => {
+      .catch((error) => {
         setLoading(false);
+        notifyError(error?.response?.data?.message || "Something went wrong");
       });
   };
   return (
