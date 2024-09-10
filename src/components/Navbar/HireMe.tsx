@@ -45,11 +45,10 @@ export function HireMeModal() {
     axios
       .post("/api/email", data)
       .then((res) => {
-        console.log(res);
         setLoading(false);
+        setData(initialState);
       })
       .catch((err) => {
-        console.log(err);
         setLoading(false);
       });
   };
