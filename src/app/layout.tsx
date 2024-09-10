@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/Theme/ThemeProvider";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <Toaster position="top-center" reverseOrder={false} />
         </ThemeProvider>
       </body>
     </html>
