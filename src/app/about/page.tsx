@@ -1,5 +1,7 @@
 import { AppleCardsCarouselDemo } from "@/components/CardsCarousel/CardsCarousel";
+import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { Metadata } from "next";
+import Image from "next/image";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -11,6 +13,29 @@ const page = () => {
   return (
     <div>
       <AppleCardsCarouselDemo />
+      <div className="flex flex-col overflow-hidden">
+        <ContainerScroll
+          titleComponent={
+            <>
+              <h1 className="text-4xl font-semibold text-black dark:text-white">
+                Unleash the power of <br />
+                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                  Scroll Animations
+                </span>
+              </h1>
+            </>
+          }
+        >
+          <Image
+            src={`https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
+            alt="hero"
+            height={720}
+            width={1400}
+            className="mx-auto rounded-2xl object-cover h-full object-left-top"
+            draggable={false}
+          />
+        </ContainerScroll>
+      </div>
     </div>
   );
 };
