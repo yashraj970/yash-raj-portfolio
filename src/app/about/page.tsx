@@ -20,7 +20,7 @@ const page = () => {
               <h1 className="text-4xl font-semibold text-black dark:text-white">
                 Always Evolving <br />
                 <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                  
+                  Always Learning
                 </span>
               </h1>
             </>
