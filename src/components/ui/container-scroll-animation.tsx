@@ -39,6 +39,7 @@ export const ContainerScroll = ({
       className="h-[50rem] md:h-[66rem] flex justify-center relative p-2"
       ref={containerRef}
     >
+      <div className="absolute inset-0 h-full opacity-60 w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
       <div
         className="py-4 md:py-10 w-full relative"
         style={{
