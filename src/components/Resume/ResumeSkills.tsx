@@ -28,11 +28,11 @@ export default function ResumeSkills() {
       skills: [
         "Node.js",
         "Express",
+        ".NET",
         "REST APIs",
-        "GraphQL",
         "MongoDB",
         "PostgreSQL",
-        "Firebase",
+        "MS SQL",
       ],
     },
     {
