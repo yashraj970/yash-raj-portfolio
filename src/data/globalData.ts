@@ -34,13 +34,25 @@ export const projects: Project[] = [
     description:
       "A UI library that provides a collection of reusable components, Blocks and templates for React and Next.js projects.",
     liveLink: "https://ui.devsloka.in/",
-    github: "https://github.com/yashraj970/YesMart-Ecommerce",
+    github: "https://github.com/yashraj970/AI-Agent-Template",
     content: [
       {
         image: "/images/projects/Blocks_Page.png",
         detailTitle: "Free Blocks Page: Pre-built Sections for Your Website",
         detailDesc:
           "Explore a variety of pre-designed blocks that you can easily integrate into your website. Each block is crafted to fit seamlessly into different sections of your site, allowing you to quickly build and customize your layout with minimal effort.",
+      },
+      {
+        image: "/images/projects/Components_Page.png",
+        detailTitle: "Components Collection",
+        detailDesc:
+          "Professionally designed UI components that cater to various functionalities and styles. These components are fully customizable, enabling you to create a unique user interface that aligns with your brand identity.",
+      },
+      {
+        image: "/images/projects/Templates_Page.png",
+        detailTitle: "Templates Page: Ready-Made Website Templates",
+        detailDesc:
+          "Browse through a selection of professionally designed website templates that cater to various industries and styles. These templates are fully customizable, enabling you to create a unique online presence that aligns with your brand identity.",
       },
     ],
   },
