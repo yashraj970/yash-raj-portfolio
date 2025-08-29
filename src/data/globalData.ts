@@ -29,6 +29,22 @@ export interface Project {
 }
 export const projects: Project[] = [
   {
+    title: "Animated UI Library",
+    src: "/images/projects/Devsloka_UI.png",
+    description:
+      "A UI library that provides a collection of reusable components, Blocks and templates for React and Next.js projects.",
+    liveLink: "https://ui.devsloka.in/",
+    github: "https://github.com/yashraj970/YesMart-Ecommerce",
+    content: [
+      {
+        image: "/images/projects/Blocks_Page.png",
+        detailTitle: "Free Blocks Page: Pre-built Sections for Your Website",
+        detailDesc:
+          "Explore a variety of pre-designed blocks that you can easily integrate into your website. Each block is crafted to fit seamlessly into different sections of your site, allowing you to quickly build and customize your layout with minimal effort.",
+      },
+    ],
+  },
+  {
     title: "YesMart Ecommerce WebApp",
     src: "/images/projects/YesMart_Ecommerce.png",
     description:
